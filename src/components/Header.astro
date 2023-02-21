@@ -1,6 +1,6 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
 ---
 
 <header>
@@ -8,9 +8,9 @@ import { SITE_TITLE } from '../consts';
 		{SITE_TITLE}
 	</h2>
 	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
+		<HeaderLink href="/" class="btn">首页</HeaderLink>
+		<HeaderLink href="/blog" class="btn">文章</HeaderLink>
+		<HeaderLink href="/about" class="btn">关于</HeaderLink>
 		<!-- <HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink> -->
 		<!-- <HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink> -->
 	</nav>
@@ -20,6 +20,46 @@ import { SITE_TITLE } from '../consts';
 		margin: 0em 0 2em;
 	}
 	h2 {
-		margin: 0.5em 0;
+		display: block;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+		float: none;
+		z-index: auto;
+		width: auto;
+		height: auto;
+		position: static;
+		cursor: default;
+		opacity: 1;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		border: none;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		font: normal normal 900 70px / normal "Aldrich", Helvetica, sans-serif;
+		color: rgb(32, 44, 45);
+		text-align: center;
+		-o-text-overflow: clip;
+		text-overflow: clip;
+		background: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		text-shadow: 0 1px 0 rgb(128, 141, 147), -1px 0 0 rgb(205, 210, 213),
+			-1px 2px 0 rgb(128, 141, 147), -2px 1px 0 rgb(205, 210, 213),
+			-2px 3px 0 rgb(128, 141, 147), -3px 2px 0 rgb(205, 210, 213),
+			-3px 4px 0 rgb(128, 141, 147), -4px 3px 0 rgb(205, 210, 213),
+			-4px 5px 0 rgb(128, 141, 147), -5px 4px 0 rgb(205, 210, 213),
+			-5px 6px 0 rgb(128, 141, 147), -6px 5px 0 rgb(205, 210, 213),
+			-6px 7px 0 rgb(128, 141, 147), -7px 6px 0 rgb(205, 210, 213),
+			-7px 8px 0 rgb(128, 141, 147), -8px 7px 0 rgb(205, 210, 213);
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+		-webkit-transform: none;
+		transform: none;
+		-webkit-transform-origin: 50% 50% 0;
+		transform-origin: 50% 50% 0;
 	}
 </style>

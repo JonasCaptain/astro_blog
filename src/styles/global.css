@@ -25,12 +25,12 @@ strong,
 b {
 	color: #222;
 }
-a {
+/* a {
 	color: #3273dc;
-}
-nav a {
+} */
+/* nav a {
 	margin-right: 10px;
-}
+} */
 textarea {
 	width: 100%;
 	font-size: 16px;
